@@ -1,0 +1,45 @@
+.menu {
+  background-color: $menu-background-color;
+  z-index: 1;
+
+  &__content {
+    height: 100vh;
+  }
+
+  &__nav {
+    margin: 0 0 40px;
+
+    @include landscape {
+      margin: 0 0 10px;
+    }
+  }
+
+  &__call {
+    display: block;
+    width: fit-content;
+
+    @extend %nav-text-style;
+
+    &--phone {
+      font-size: 16px;
+      line-height: 27px;
+      margin: 0 0 16px;
+
+      @include landscape {
+        margin: 0;
+      }
+    }
+
+    &--action {
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: 2px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid $text-color-dark;
+
+      @include landscape {
+        padding-bottom: 4px;
+      }
+    }
+  }
+}
