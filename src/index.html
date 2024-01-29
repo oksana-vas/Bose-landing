@@ -3,6 +3,16 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+    name="description"
+    content="
+      Homepage for a store specializing in audio devices. Presents product categories, recommended products, and offers a contact form for reaching out to the store.
+    ">
+    <meta
+    name="keywords"
+    content="
+      audio devices, audio devices store, headphones, earbuds, speakers, audio sunglasses, earphones, amplifiers, wireless audio, portable audio, bluetooth speakers, audio devices shop website, audio devices store website
+    ">
     <title>Bose</title>
     <link rel="icon" href="images/icons/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,7 +22,16 @@
       crossorigin="anonymous"
     >
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="preload" href="./styles/main.scss" as="style">
+    <link rel="preload" href="scripts/main.js" as="script">
     <link rel="stylesheet" href="./styles/main.scss">
+    <link
+      rel="preload"
+      fetchpriority="high"
+      as="image"
+      href="./images/header.png"
+      type="image/webp"
+    >
     <script src="scripts/main.js" defer></script>
   </head>
   <body class="page__body">
@@ -62,7 +81,11 @@
       <div class="container">
         <div class="menu__content">
           <div class="top-actions">
-            <a href="#" class="top-actions__logo">
+            <a
+              href="#"
+              class="top-actions__logo"
+              aria-label="Go to Bose homepage"
+            >
               <img
                 src="images/logo.svg"
                 alt="Bose logo"
@@ -72,6 +95,7 @@
             <a
               href="#"
               class="icon icon--cross"
+              aria-label="Close the menu"
             >
             </a>
           </div>
@@ -82,6 +106,7 @@
                 <a
                   href="#"
                   class="nav__link"
+                  aria-label="Go to Bose homepage"
                 >
                   Home
                 </a>
@@ -91,6 +116,7 @@
                 <a
                   href="#recommended"
                   class="nav__link"
+                  aria-label="Go to Recommended products"
                 >
                   Recommended
                 </a>
@@ -100,6 +126,7 @@
                 <a
                   href="#categories"
                   class="nav__link"
+                  aria-label="Go to Categories section"
                 >
                   Categories
                 </a>
@@ -109,6 +136,7 @@
                 <a
                   href="#how-to-buy"
                   class="nav__link"
+                  aria-label="Go to How to buy section"
                 >
                   How to buy
                 </a>
@@ -118,6 +146,7 @@
                 <a
                   href="#contacts"
                   class="nav__link"
+                  aria-label="Go to Contacts section"
                 >
                   Contacts
                 </a>
@@ -128,6 +157,7 @@
           <a
             href="tel:+123455555555"
             class="menu__call menu__call--phone"
+            aria-label="Call us +123455555555"
           >
             +1 234 5555-55-55
           </a>
@@ -135,6 +165,7 @@
           <a
             href="tel:+123455555555"
             class="menu__call menu__call--action"
+            aria-label="Call to order"
           >
             Call to order
           </a>
@@ -231,6 +262,7 @@
                 <a
                   href="#headphones&earbuds"
                   class="category__link category__link--wide"
+                  aria-label="Headphones and earbuds category"
                 >
                   <img
                     src="./images/categories/headphones-wide.png"
@@ -242,6 +274,7 @@
                 <a
                   href="#headphones&earbuds"
                   class="category__link category__link--square"
+                  aria-label="Headphones and earbuds category"
                 >
                   <img
                     src="./images/categories/headphones-square.png"
@@ -255,6 +288,7 @@
                 <a
                   href="#headphones&earbuds"
                   class="category__title-link"
+                  aria-label="Headphones and earbuds category"
                 >
                   Headphones & earbuds
                 </a>
@@ -266,6 +300,7 @@
                 <a
                   href="#speakers"
                   class="category__link category__link--wide"
+                  aria-label="Speakers category"
                 >
                   <img
                     src="./images/categories/speakers-wide.png"
@@ -277,6 +312,7 @@
                 <a
                   href="#speakers"
                   class="category__link category__link--square"
+                  aria-label="Speakers category"
                 >
                   <img
                     src="./images/categories/speakers-square.png"
@@ -290,6 +326,7 @@
                 <a
                   href="#speakers"
                   class="category__title-link"
+                  aria-label="Speakers category"
                 >
                   Speakers
                 </a>
@@ -301,6 +338,7 @@
                 <a
                   href="#audio-sunglases"
                   class="category__link category__link--square"
+                  aria-label="Audio sunglasses category"
                 >
                   <img
                     src="./images/categories/sunglases-square.png"
@@ -312,6 +350,7 @@
                 <a
                   href="#audio-sunglases"
                   class="category__link category__link--wide"
+                  aria-label="Audio sunglasses category"
                 >
                   <img
                     src="./images/categories/sunglases-wide.png"
@@ -325,6 +364,7 @@
                 <a
                   href="#audio-sunglases"
                   class="category__title-link"
+                  aria-label="Audio sunglasses category"
                 >
                   Audio sunglasses
                 </a>
@@ -438,38 +478,41 @@
 
             <div class="contacts__contacts">
               <div class="contacts__unit">
-                <h4 class="contacts__contact-label">
+                <h3 class="contacts__contact-label">
                   Phone
-                </h4>
+                </h3>
                 <a
                   href="tel:+123455555555"
                   class="contacts__contact"
+                  aria-label="Call us +123455555555"
                 >
                   +1 234 5555-55-55
                 </a>
               </div>
 
               <div class="contacts__unit">
-                <h4 class="contacts__contact-label">
+                <h3 class="contacts__contact-label">
                   Email
-                </h4>
+                </h3>
                 <a
                   href="mailto:hello@miami.com"
                   class="contacts__contact"
+                  aria-label="Email us hello@miami.com"
                 >
                   hello@miami.com
                 </a>
               </div>
 
               <div class="contacts__unit">
-                <h4 class="contacts__contact-label">
+                <h3 class="contacts__contact-label">
                   Address
-                </h4>
+                </h3>
                 <a
                   class="contacts__address-link"
                   href="https://goo.gl/maps/6aPMEzYoHtj8BpXc9"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Our address in google maps"
                 >
                   <p class="contacts__contact">
                     400 first ave.
