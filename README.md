@@ -26,4 +26,4 @@ Semantic and meta tags have been incorporated, optimizing for SEO and enhancing 
 
 *see google lighthouse report below*
 
-![REPORT](./src/images/README-report.png)
+![REPORT](./src/images/google-lighthouse-report.png)
