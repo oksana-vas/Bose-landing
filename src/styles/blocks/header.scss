@@ -1,5 +1,5 @@
 .header {
-  background-image: url(../images/header.png);
+  background-image: url(../images/header.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -23,30 +23,12 @@
   }
 
   &__title {
-    font-size: 32px;
-    line-height: 100%;
-    font-weight: 800;
-    font-style: italic;
-    letter-spacing: -1.5px;
-    margin: 0;
+    display: flex;
+    flex-direction: column;
 
-    @include onTablet {
-      font-size: 40px;
-    }
-
-    @include onDesktop {
-      font-size: 48px;
-    }
-
-    &::before {
-      content: "";
-      display: block;
+    &-image {
       width: 48px;
       height: 58px;
-      background-image: url(../images/sound-waves.svg);
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
       margin: 0 0 16px;
 
       @include onTablet {
@@ -57,6 +39,23 @@
 
       @include landscape {
         margin: 0 0 20px;
+      }
+    }
+
+    &-text {
+      font-size: 32px;
+      line-height: 100%;
+      font-weight: 800;
+      font-style: italic;
+      letter-spacing: -1.5px;
+      margin: 0;
+
+      @include onTablet {
+        font-size: 40px;
+      }
+
+      @include onDesktop {
+        font-size: 48px;
       }
     }
   }
